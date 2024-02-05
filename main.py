@@ -24,7 +24,7 @@ def load_data():
 
 index = load_data()
 
-chat_engine = index.as_chat_engine(chat_mode="condense_question", verbose=True)
+chat_engine = index.as_chat_engine(chat_mode="context", verbose=True)
 
 
 if prompt := st.chat_input("Your question"): # Prompt for user input and save to chat history
