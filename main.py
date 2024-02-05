@@ -6,11 +6,11 @@ from llama_index import SimpleDirectoryReader
 
 
 openai.api_key = st.secrets.openai_key
-st.header("Chat with the Streamlit docs 💬 📚")
+st.header("Chat About Machine Learning 💬 📚")
 
 if "messages" not in st.session_state.keys(): # Initialize the chat message history
     st.session_state.messages = [
-        {"role": "assistant", "content": "Ask me a question about Streamlit's open-source Python library!"}
+        {"role": "assistant", "content": "Ask me a question about Machine Learning."}
     ]
 
 @st.cache_resource(show_spinner=False)
